@@ -2,6 +2,7 @@
 #########################################################
 # PROVIDER VARIABLE
 #########################################################
+
 variable "region" {
   description = "passing the region"
   type        = string
@@ -11,19 +12,18 @@ variable "region" {
 variable "component" {
   description = "passing the component"
   type        = string
-  default     = "3-tier-architecture"
 }
 
-variable "profile" {
-  description = "passing the profile"
-  type        = string
-  default     = "iamadmin"
-}
+# Make sure to remove this if you are using default 
+# variable "profile" {
+#   description = "passing the profile"
+#   type        = string
+#   default     = "iamadmin"
+# }
 
 variable "env" {
   type        = string
   description = "passing the environment tag"
-  default     = "prod"
 }
 
 #########################################################

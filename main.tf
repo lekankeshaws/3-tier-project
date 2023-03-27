@@ -30,8 +30,8 @@ terraform {
 #########################################################
 
 provider "aws" {
-  region  = var.region
-  profile = var.profile
+  region = var.region
+  # profile = var.profile # this is optional I have my profile set with default so even if I don't specify this it would use my default profile
 
   default_tags {
     tags = {
